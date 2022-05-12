@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoogleMaps.MainPage">
+
+
+    <!--<StackLayout Background="WHITE">-->
+    <!--<Frame OutlineColor="White"
+               BackgroundColor="White"
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="Center"
+               Padding="0"
+               Margin="0">
+            <Label Text="GOOGLE MAPS"
+                      TextColor="Gray"
+                      FontSize="36"
+                      FontAttributes="Bold" />-->
+
+
+    <!--</Frame>-->
+
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Googlemaps.png"  HeightRequest="60" WidthRequest="60" Grid.Row="1"  Aspect="AspectFit"/>
+        <StackLayout Grid.Row="2" VerticalOptions="EndAndExpand">
+            <Label Text="GOOGLE MAPS"
+       HorizontalTextAlignment="Center"
+       TextColor="Gray" FontSize="36" FontAttributes="Bold"/>
+            <ProgressBar x:Name="ProgressBar"
+           Margin="10,0"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
+
+
+
+
+
+
+
+
